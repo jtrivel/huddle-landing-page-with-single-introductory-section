@@ -1,0 +1,18 @@
+@use '../base/variables' as v ;
+@use '../base/mixins' as m ;
+
+.footer {
+  display: none; 
+    @include m.desktop { 
+      font-size: 1.4rem;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      padding: 1rem;
+    &__link {
+      text-decoration: none;
+      color: v.$softMagenta;
+      font-weight: 600;
+    }
+  }
+}

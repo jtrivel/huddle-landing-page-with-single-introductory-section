@@ -1,0 +1,95 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.huddle {
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 6rem;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include m.desktop { 
+      @include m.grid(5,4rem);
+      align-items:center;
+      justify-content: center;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    @include m.desktop { 
+      grid-column: 1/4;
+    }
+  }
+
+  &__logo {
+    max-width: 25rem;
+  }
+
+  &__right {
+    @include m.desktop {
+      grid-column: 4 /6;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    @include m.desktop { 
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+
+  &__btn {
+    padding: 1rem 8rem;
+    background-color: v.$white;
+    color: v.$violet;
+    border-radius: 69rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    &:hover {
+      color: v.$white;
+      background-color: v.$softMagenta;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+    @include m.desktop { 
+      align-self: flex-end;
+    }
+  }
+
+  &__icons {
+    padding: 1rem;
+    font-size: 2rem;
+    border: 2px solid v.$white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 250ms ease;
+    &:hover {
+      border: 2px solid v.$softMagenta;
+      color: v.$softMagenta;
+    }
+  }
+}
