@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/stats-preview-card-solution-with-css-grid-ZlrikMdFx)
-- Live Site URL: [Live Site URL](https://stats-preview-card001.netlify.app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/huddle-landing-page-single-section-solution-with-grid-and-flexbox-Xh64DzTVJ)
+- Live Site URL: [Live Site URL](https://huddle-lading-page-with-single-section0001.netlify.app/)
 
 ### Built with
 - SASS
